@@ -3,6 +3,7 @@ package com.example.jfm;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 
@@ -11,6 +12,8 @@ import android.os.Message;
  */
 
 class MyActivity extends Activity {
+    String sdPath = Environment.getExternalStorageDirectory().toString() + "/Police";
+    String deBugLog = "jfm--->";
     Handler task = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message message) {
@@ -41,4 +44,5 @@ class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         ToastUtils.init(this);
     }
+
 }

@@ -53,6 +53,7 @@
             android:background="@color/colorCursor" />
 
         <EditText
+            android:text="123456"
             android:layout_marginTop="20dp"
             android:id="@+id/et_userName"
             android:layout_width="match_parent"
@@ -111,6 +112,7 @@
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:text="123456"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/viewPwd"
